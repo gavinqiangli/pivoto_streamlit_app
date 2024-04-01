@@ -9,6 +9,15 @@ def main():
 
     st.markdown("Demo by [Qiang Li](https://www.linkedin.com/in/qianglil/). All rights reserved.")
 
+    # hdie sidebar
+    st.markdown("""
+        <style>
+            section[data-testid="stSidebar"][aria-expanded="true"]{
+                display: none;
+            }
+        </style>
+        """, unsafe_allow_html=True)
+    
     # this markdown is for hiding "github" button
     st.markdown("<style>#MainMenu{visibility:hidden;}</style>", unsafe_allow_html=True)
     st.markdown("<style>footer{visibility: hidden;}</style>", unsafe_allow_html=True)
